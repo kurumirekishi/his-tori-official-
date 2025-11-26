@@ -51,14 +51,18 @@ const Hero = () => {
                 <div className="line"></div>
             </motion.div>
 
-            <motion.img
-                src="/band-photo.png"
-                alt="His-tori Band Members"
-                className="hero-band-photo"
+            <motion.div
+                className="hero-band-photo-wrapper"
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.8, duration: 1.2 }}
-            />
+            >
+                <img
+                    src="/band-photo.png"
+                    alt="His-tori Band Members"
+                    className="hero-band-photo"
+                />
+            </motion.div>
         </section>
     );
 };
