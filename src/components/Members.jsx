@@ -4,22 +4,22 @@ import './Members.css';
 const Members = () => {
     const members = [
         {
-            name: 'Narukami',
-            role: 'Guitar / Vocal',
+            name: 'ナルカミ',
+            role: 'Vo / Gt',
             image: '/members/narukami.png',
-            description: 'The electrifying leader who commands the stage with thunderous riffs and powerful vocals.'
+            description: '雷鳴の如き歌声で歴史を紡ぐフロントマン。'
         },
         {
-            name: 'Horus',
-            role: 'Bass',
+            name: 'ホルス',
+            role: 'Ba',
             image: '/members/horus.png',
-            description: 'The stoic guardian of the low end, weaving complex basslines with ancient precision.'
+            description: '天空の視点から重低音を支える守護者。'
         },
         {
-            name: 'Shakoki',
-            role: 'Drums',
+            name: '遮光器インコ',
+            role: 'Dr',
             image: '/members/shakoki.jpg',
-            description: 'The rhythmic heartbeat of the band, driving the music with primal energy and mystic beats.'
+            description: '古代の記憶をリズムに刻む土偶ドラマー。'
         }
     ];
 
