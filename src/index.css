@@ -1,0 +1,86 @@
+:root {
+  --color-bg: #050508;
+  --color-bg-secondary: #0f0f16;
+  --color-text: #e0e0e0;
+  --color-text-muted: #a0a0a0;
+  --color-gold: #d4af37;
+  --color-gold-glow: rgba(212, 175, 55, 0.5);
+  --color-accent: #8b0000;
+  /* Deep Red */
+
+  --font-main: 'Shippori Mincho', serif;
+  --font-sans: 'Inter', sans-serif;
+
+  --spacing-section: 8rem;
+  --spacing-container: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-main);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-gold);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-container);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 auto 4rem;
+  color: var(--color-gold);
+  text-shadow: 0 0 10px var(--color-gold-glow);
+  position: relative;
+  display: table;
+  /* Allows margin: 0 auto to work while keeping width fit-content behavior if needed, or just block */
+  display: block;
+  width: fit-content;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--color-gold);
+  margin: 1rem auto 0;
+}
