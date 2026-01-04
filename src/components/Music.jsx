@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import { FaSpotify, FaApple } from 'react-icons/fa';
+import { SiYoutubemusic } from 'react-icons/si';
 import './Music.css';
 
 const videos = [
@@ -23,10 +25,10 @@ const videos = [
 // Actually, I'll make it a "Discography" style list that links to YouTube.
 
 const tracks = [
-    { title: "GOLD - 狂気の太陽", views: "241 views", date: "2 months ago" },
-    { title: "The Caving Carnival", views: "195 views", date: "3 months ago" },
-    { title: "矢が降る夜 — Arrows in the Dark", views: "169 views", date: "4 months ago" },
-    { title: "祈りのあとさき", views: "142 views", date: "4 months ago" },
+    { title: "GOLD - 狂気の太陽", views: "245 views", date: "3 months ago" },
+    { title: "The Caving Carnival", views: "210 views", date: "4 months ago" },
+    { title: "四季あはれ - Seasons of Grace", views: "77 views", date: "2 months ago" },
+    { title: "Spirit - 記憶という酒 - short ver.", views: "47 views", date: "2 months ago" },
 ];
 
 const Music = () => {
@@ -77,6 +79,21 @@ const Music = () => {
                                     <div className="play-icon">▶</div>
                                 </motion.a>
                             ))}
+                        </div>
+
+                        <div className="streaming-links">
+                            <h3 className="subsection-title" style={{ marginTop: '2rem' }}>Listen on</h3>
+                            <div className="platform-buttons">
+                                <a href="https://open.spotify.com/intl-ja/artist/4BVOPQPMluSpx031xLtyN1?si=jsMPuVU8TIaxz-A6Y1u26g" target="_blank" rel="noopener noreferrer" className="btn-platform spotify">
+                                    <FaSpotify /> Spotify
+                                </a>
+                                <a href="https://music.apple.com/us/artist/his-tori-%E6%AD%B4%E5%8F%B2%E3%82%92%E4%BC%9D%E3%81%88%E3%82%8B%E9%B3%A5%E3%83%AD%E3%83%83%E3%82%AF%E3%83%90%E3%83%B3%E3%83%89/1831705010" target="_blank" rel="noopener noreferrer" className="btn-platform apple">
+                                    <FaApple /> Apple Music
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCiaWmERd0Y6dH9-6zBmPLJg" target="_blank" rel="noopener noreferrer" className="btn-platform youtube-music">
+                                    <SiYoutubemusic /> YouTube Music
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -112,3 +112,53 @@
         grid-template-columns: 1fr;
     }
 }
+
+.streaming-links {
+    margin-top: 2rem;
+}
+
+.platform-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn-platform {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.btn-platform:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-platform.spotify:hover {
+    background: #1DB954;
+    border-color: #1DB954;
+    color: #fff;
+}
+
+.btn-platform.apple:hover {
+    background: #FA243C;
+    border-color: #FA243C;
+    color: #fff;
+}
+
+.btn-platform.youtube-music:hover {
+    background: #FF0000;
+    border-color: #FF0000;
+    color: #fff;
+}
+
+.btn-platform svg {
+    font-size: 1.2rem;
+}
